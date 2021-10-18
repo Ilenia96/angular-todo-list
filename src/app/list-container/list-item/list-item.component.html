@@ -1,6 +1,8 @@
-<label for="item-input">Add an item:</label>
-<input type="text" id="item-input" #newItem>
-<button (click)="addNewItem(newItem.value)">Add to list</button>
+<div class="container">
+  <label for="item-input"><span>Aggiungi:</span></label>
+  <input type="text" id="item-input" #newItem>
+  <button type="button" class="btn btn-primary" (click)="addNewItem(newItem.value)">Aggiungi</button>
 
 
-<button (click)="removeUser()">Clicca qui per eliminare</button>
+  <button type="button" class="btn btn-danger" (click)="removeUser()">Clicca qui per eliminare</button>
+</div>

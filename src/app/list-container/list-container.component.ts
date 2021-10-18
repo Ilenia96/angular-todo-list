@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-container.component.scss']
 })
 export class ListContainerComponent implements OnInit {
-items = ['Un esempio... oggi devo rifare il letto, poi?'];
+items = ['Cosa vuoi annotare oggi?'];
 
   constructor() { }
 
@@ -19,7 +19,7 @@ items = ['Un esempio... oggi devo rifare il letto, poi?'];
 
   removeItem(event : string) {
     const userdeleted = this.items.findIndex((user) => user);
-    this.items.splice(userdeleted, 1);
+    this.items.splice(userdeleted, 100);
     console.log(event);
   }
 
