@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+
+<app-list-item (newItemEvent)="addItem($event)" (removedUser)="removeItem($event)"></app-list-item>
