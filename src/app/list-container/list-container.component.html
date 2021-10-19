@@ -1,9 +1,11 @@
 <div class="container">
-  <app-list-item (newItemEvent)="addItem($event)" (removedUser)="removeItem($event)"></app-list-item>
+  <app-list-item (newItemEvent)="addItem($event)"></app-list-item>
 
   <ol class="list-group list-group-numbered">
     <li class="list-group-item list-group-item-primary" *ngFor="let item of items">
       <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
       {{item}}</li>
   </ol>
+
+  <button type="button" class="btn btn-danger" (click)="clearList()">Clicca qui per eliminare tutto</button>
 </div>

@@ -17,10 +17,10 @@ items = ['Cosa vuoi annotare oggi?'];
     this.items.push(newItem);
   }
 
-  removeItem(event : string) {
-    const userdeleted = this.items.findIndex((user) => user);
-    this.items.splice(userdeleted, 100);
-    console.log(event);
+  clearList() {
+    this.items = [];
+
+
   }
 
 

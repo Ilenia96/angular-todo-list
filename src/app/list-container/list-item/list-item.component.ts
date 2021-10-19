@@ -7,7 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ListItemComponent implements OnInit {
   @Output() newItemEvent = new EventEmitter<string>();
-  @Output() removedUser = new EventEmitter<string>();
+
 
 
   constructor() { }
@@ -17,10 +17,6 @@ export class ListItemComponent implements OnInit {
 
    addNewItem(value: string) {
     this.newItemEvent.emit(value);
-  }
-
-  removeUser() {
-    this.removedUser.emit('Utente rimosso');
   }
 
 }
