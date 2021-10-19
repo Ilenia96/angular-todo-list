@@ -1,0 +1,5 @@
+<div class="container">
+  <label for="item-input"><span>Aggiungi i tuoi impegni giornalieri:</span></label>
+  <input type="text" id="item-input" #newItem>
+  <button type="button" class="btn btn-primary" (click)="addNewItem(newItem.value)">Aggiungi</button>
+</div>
