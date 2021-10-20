@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-container.component.scss']
 })
 export class ListContainerComponent implements OnInit {
-items = ['Un esempio, scrivere codice!']
+items = ['Un esempio: "scrivere codice!"']
 
 
 
